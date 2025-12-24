@@ -4,7 +4,7 @@ import webbrowser
 import datetime
 import os
 
-# Initialize Text-to-Speech
+#Text-to-Speech
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[1].id)  # Female voice
@@ -100,6 +100,4 @@ def run_assistant():
 
         else:
             speak("Sorry, I can't do that yet.")
-
-# Start Assistant
 run_assistant()
